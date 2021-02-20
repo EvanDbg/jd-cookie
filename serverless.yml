@@ -1,0 +1,29 @@
+component: express
+name: express-wLplvExYN
+org: '1257311667'
+app: demo
+stage: dev
+inputs:
+  region: ap-guangzhou
+  functionName: express_component_00oedio
+  runtime: Nodejs10.15
+  serviceId: service-oc6drlra
+  src:
+    src: /Users/yangfan/Documents/jd-cookie
+    exclude:
+      - .env
+      - node_modules/**
+  apigatewayConf:
+    serviceTimeout: 60
+    protocols:
+      - http
+      - https
+    environment: release
+    autoCreateDns: false
+  functionConf:
+    eip: false
+    timeout: 3
+    memorySize: 128
+  layers:
+    - name: demo-layer
+      version: 1
