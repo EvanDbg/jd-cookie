@@ -225,6 +225,6 @@ app.get('/home', function (request, response) {
     
 });
 
-app.listen(5678, () => {
+app.listen(5566, () => {
     console.log('控制面板已启动！');
 });
