@@ -2,7 +2,7 @@
 set -e
 
 echo -e "======================Starting control panel========================\n"
-  pm2 start ./server.js
+  pm2 start ./index.js
   echo -e "Panel started\n"
   echo -e "http://<ip>:5566\n"
 
